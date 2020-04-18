@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <LangVersion>7.3</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageId>DigitalBiblePlatformSharp</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Title>DigitalBiblePlatformSharp</Title>
+    <Authors>markivan.basto</Authors>
+    <Description>Wrapper for the Digital Bible Platform Developer API</Description>
+    <Copyright>(c) 2020 Mark Ivan Basto</Copyright>
+    <PackageProjectUrl>https://github.com/MarkIvanDev/DigitalBiblePlatformSharp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/MarkIvanDev/DigitalBiblePlatformSharp.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>digital bible platform developer api wrapper c#</PackageTags>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>

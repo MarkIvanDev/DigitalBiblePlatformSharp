@@ -22,6 +22,7 @@
 
 using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
@@ -29,12 +30,13 @@ using Newtonsoft.Json.Serialization;
 
 namespace DigitalBiblePlatformSharp.Core
 {
-    [JsonConverter(typeof(StringEnumConverter), typeof(KebabCaseNamingStrategy))]
+    [JsonConverter(typeof(StringEnumConverter))]
     public enum AudioProtocol
     {
         http = 0,
         https = 1,
         rtmp = 2,
+        [EnumMember(Value = "rtmp-amazon")]
         rtmp_amazon = 3
     }
 }

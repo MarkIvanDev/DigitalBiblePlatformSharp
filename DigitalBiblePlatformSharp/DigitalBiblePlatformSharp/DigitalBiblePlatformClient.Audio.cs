@@ -35,7 +35,7 @@ namespace DigitalBiblePlatformSharp
         public async Task<Collection<AudioLocation>> GetAudioLocations(AudioProtocol protocol)
         {
             var request = new HttpRequest(ApiEndpoints.Audio.Location, baseQuery);
-            request.Query.AddRequiredParameter(nameof(protocol), JsonConvert.SerializeObject(protocol));
+            request.Query.AddRequiredParameter(nameof(protocol), protocol.ToString().Replace('_', '-'));
 
             var response = await httpClient.ExecuteAsync<Collection<AudioLocation>>(request);
             return response ?? new Collection<AudioLocation>();

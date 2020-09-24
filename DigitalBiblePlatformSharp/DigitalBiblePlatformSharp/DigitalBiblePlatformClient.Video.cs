@@ -43,7 +43,7 @@ namespace DigitalBiblePlatformSharp
         {
             var request = new HttpRequest(ApiEndpoints.Video.Path, baseQuery);
             request.Query.AddRequiredParameter(nameof(dam_id), dam_id);
-            request.Query.AddRequiredParameter(nameof(encoding), JsonConvert.SerializeObject(encoding));
+            request.Query.AddRequiredParameter(nameof(encoding), encoding);
             request.Query.AddOptionalParameter(nameof(resolution), resolution);
             request.Query.AddOptionalParameter(nameof(segment_order), segment_order);
             request.Query.AddOptionalParameter(nameof(book_id), book_id);

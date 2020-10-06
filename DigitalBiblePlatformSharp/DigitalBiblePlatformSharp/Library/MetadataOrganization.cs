@@ -31,7 +31,7 @@ namespace DigitalBiblePlatformSharp.Library
     public class MetadataOrganization
     {
         [JsonProperty("organization_id")]
-        public int Id { get; set; }
+        public int? Id { get; set; }
 
         [JsonProperty("organization")]
         public string Name { get; set; }
@@ -40,7 +40,7 @@ namespace DigitalBiblePlatformSharp.Library
         public string EnglishName { get; set; }
 
         [JsonProperty("organization_role")]
-        public OrganizationRole Role { get; set; }
+        public OrganizationRole? Role { get; set; }
 
         [JsonProperty("organization_url")]
         public string Url { get; set; }

@@ -28,10 +28,10 @@ namespace DigitalBiblePlatformSharp.Core
 {
     public enum CollectionType
     {
-        AL = 0,
-        ON = 1,
-        OT = 2,
-        NT = 3,
+        ON = 0,
+        OT = 1,
+        NT = 2,
+        AL = 3,
         AP = 4,
         VU = 5,
         ET = 6,
